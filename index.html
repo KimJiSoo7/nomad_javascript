@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+</head>
+
+<body>
+
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"> </h1>
+
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list">
+
+    </ul>
+    <h2 id="clock"> </h2>
+    <div id="quote">
+        <span></span>
+        <br>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+
+    <!--
+        
+        <h1>Random Number Game</h1>
+        <div class="guess">
+            <h2>Generate a number between 0 and <input id="randomScope" type="number" min="0"></h2>
+            <span>Guess the number: <input id="inputNumber" type="number"> <input id="btn" type="button" value="Play!">
+            </span>
+        </div>
+        <div class="result" style="display: none;">
+            <span id="summary"></span>
+            <br>
+            <span id="yourResult"></span>
+        </div>
+        
+        <script src="js/randomNumberGame.js"></script>
+    -->
+    <!--
+        <h1>Time Until Christmas Eve</h1>
+        <h2 class="js-clock"></h2>
+        <script src="js/christmas.js"></script>
+    -->
+
+    <!--
+        <button>Give me color</button>    
+        <script src="js/linearGradient.js"></script>
+    -->
+
+</body>
+
+</html>
