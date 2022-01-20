@@ -24,8 +24,10 @@ function paintBody(){
     bgStyle.style.background = `linear-gradient(${colors[Math.floor(Math.random() * colors.length)]}, ${colors[Math.floor(Math.random() * colors.length)]})`;
 }
 
-  const btnClick = document.querySelector("button");
-  btnClick.addEventListener("click", paintBody)
+paintBody();
+
+//   const btnClick = document.querySelector("button");
+//   btnClick.addEventListener("click", paintBody)
   
   
   
