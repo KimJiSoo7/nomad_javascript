@@ -36,9 +36,8 @@ const quotes = [
 ];
 
 const quoteElement = document.querySelectorAll("#quote span");
-console.dir(quoteElement);
 
 const todaysQuote = quotes[Math.floor((Math.random() * quotes.length))];
 quoteElement[0].innerText = todaysQuote.quote;
-quoteElement[1].innerText = `By ${todaysQuote.author}`;
-// console.log(quotes[ranNum]);
+quoteElement[1].innerText = `by ${todaysQuote.author}`;
+
