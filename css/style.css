@@ -29,6 +29,11 @@ label {
     margin: .4rem 0;
 }
 
+.clock_weather img{
+    display:inline-block; 
+    vertical-align:middle;
+}
+
 
 /* linear-gradient */
 /* body {
