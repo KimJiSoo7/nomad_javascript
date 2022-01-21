@@ -6,10 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum App</title>
+    <title>To Do List</title>
 </head>
 
 <body>
+
+    <div class="clock_weather">
+        <h1 id="clock" style="text-align: center;"> </h1>
+        <div id="weather" style="text-align: center;">
+            <span></span>
+            <span style="padding-left: 10px;"></span>
+            <span style="padding-left: 10px;"></span>
+        </div>
+    </div>
+
+    <div class="dDay">
+        <label for="start">D-Day</label>
+        <input type="date" id="dayInput" name="day-left">
+        <span id="js-clock"></span>
+    </div>
 
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="What is your name?" />
@@ -18,21 +33,22 @@
     <h1 id="greeting" class="hidden"> </h1>
 
     <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
+        <input type="text" placeholder="Write a To Do and Press Enter" required size="60"
+            style="background-color: transparent; color: white;" />
     </form>
     <ul id="todo-list">
 
     </ul>
-    <h2 id="clock"> </h2>
-    <div id="quote">
-        <span></span>
-        <br>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+
+    <footer style="padding-top: 40%;">
+        <div id="quote" style="text-align: right;">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+    </footer>
+
+    <!-- <input type="file" name="client-file" id="get-files" multiple /> -->
 
 
     <script src="js/greetings.js"></script>
@@ -41,7 +57,8 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/linearGradient.js"></script>
+    <script src="js/dDay.js"></script>
+    <!-- <script src="js/linearGradient.js"></script> -->
 
     <!--
         
@@ -62,7 +79,7 @@
     <!--
         <h1>Time Until Christmas Eve</h1>
         <h2 class="js-clock"></h2>
-        <script src="js/christmas.js"></script>
+        
     -->
 
     <!--

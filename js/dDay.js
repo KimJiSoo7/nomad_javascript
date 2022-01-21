@@ -1,6 +1,5 @@
-const clockTitle = document.querySelector(".js-clock");
-
-const DAY_CHRISTMAS = new Date(2022,11,25);
+const clockTitle = document.querySelector(".dDay #js-clock");
+const dayValue = document.querySelector(".dDay #dayInput");
 
 // default unit: miliseconds 1s = 1000ms
 const UNIT_SEC = 1000;
@@ -8,9 +7,12 @@ const UNIT_MIN = 60 * UNIT_SEC;
 const UNIT_HOUR = 60 * UNIT_MIN;
 const UNIT_DAY = 24 * UNIT_HOUR;
 
-function dayBeforeChristmas(){
-    const dayBefore = new Date();
-    const timeDiff = DAY_CHRISTMAS.getTime() - dayBefore.getTime(); // total
+function dayBeforeDDay(){
+    if(dayValue.value === "") return;
+    const dDay = new Date(dayValue.value);
+    const today = new Date();
+
+    const timeDiff = dDay.getTime() - today.getTime(); // total
     const dayLeft = parseInt(timeDiff / UNIT_DAY); // total / D = A
 
     const hourTotal = timeDiff % (UNIT_DAY); // total % D = A'
@@ -27,8 +29,10 @@ function dayBeforeChristmas(){
 
     // clockTitle.innerText = `${timeDiff}
     //  ${dayLeft}d ${hourLeft}h ${minutesLeft}m ${secondsLeft}s`;
-    clockTitle.innerText = `${dayLeft}d ${strHour}h ${strMinutes}m ${strSeconds}s`;
+    clockTitle.innerText = `${dayLeft}일 ${strHour}시 ${strMinutes}분 ${strSeconds}초`;
 }
 
-dayBeforeChristmas();
-setInterval(dayBeforeChristmas, 1000);
+dayBeforeDDay();
+setInterval(dayBeforeDDay, 1000);
+
+addEventListener("change", dayBeforeDDay)

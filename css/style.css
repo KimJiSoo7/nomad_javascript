@@ -3,10 +3,30 @@
 }
 
 body{
-    height: 100vh;
+    height: auto;
     /* background-image: url('C:/Users/wldnd/Desktop/momentum/img/2.jpg'); */
     background-repeat : no-repeat;
     background-size : cover;
+    color: white;
+}
+
+footer{
+    height: auto;
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
 }
 
 

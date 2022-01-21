@@ -35,10 +35,10 @@ const quotes = [
     }
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quoteElement = document.querySelectorAll("#quote span");
+console.dir(quoteElement);
 
 const todaysQuote = quotes[Math.floor((Math.random() * quotes.length))];
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quoteElement[0].innerText = todaysQuote.quote;
+quoteElement[1].innerText = `By ${todaysQuote.author}`;
 // console.log(quotes[ranNum]);

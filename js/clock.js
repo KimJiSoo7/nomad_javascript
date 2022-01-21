@@ -1,6 +1,7 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector(".clock_weather #clock");
 
-function getClock() {
+function getClock(event) {
+    // event.preventDeafult();
     const date = new Date(); // 2
     const hours = date.getHours().toString().padStart(2, "0");
     const minutes = date.getMinutes().toString().padStart(2, "0");

@@ -8,7 +8,7 @@ const USERNAME_KEY = "username";
 loginForm.addEventListener("submit", onLoginSubmit);
 
 function paintGreetings(username) {
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `${username}'s To-Do List`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
